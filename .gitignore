@@ -75,3 +75,6 @@ typings/
 # json
 
 package-lock.json
+
+dist/*
+!dist/index.html
