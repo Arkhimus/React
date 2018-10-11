@@ -13,13 +13,12 @@ export default class App extends React.Component {
   }
 
   increment() {
-    const { counter } = this.state;
-    this.setState({ counter: counter + 1 });
+    this.setState(prevState => ({ counter: prevState.counter + 1 }));
   }
 
+
   decremenet() {
-    const { counter } = this.state;
-    this.setState({ counter: counter - 1 });
+    this.setState(prevState => ({ counter: prevState.counter > 0 ? prevState.counter - 1 : 0 }));
   }
 
   render() {
@@ -27,7 +26,7 @@ export default class App extends React.Component {
     return (
       <div>
         <Button event={this.increment} title="Add to it" />
-        <Display display={counter} />
+        <Display amount={counter} />
         <Button event={this.decremenet} title="Get from it" />
       </div>
     );
