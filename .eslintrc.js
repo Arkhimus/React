@@ -1,14 +1,17 @@
 module.exports = {
-  extends: "airbnb",
-  rules: {
+  "extends": "airbnb",
+  "rules": {
+    "linebreak-style": 0,
     "react/jsx-filename-extension": [
       1,
       {
-        extensions: [".js"]
-      }
-    ]
+        "extensions": [
+          ".js",
+        ],
+      },
+    ],
   },
-  env: {
-    browser: true
-  }
+  "env": {
+    "browser": true,
+  },
 };

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "webpack-dev-server --mode development",
-    "lint": "./node_modules/eslint/bin/eslint.js ."
+    "lint": "eslint ./src/"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,10 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "webpack": "^4.20.2",
