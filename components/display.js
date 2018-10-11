@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Display = ({ display }) => <p>{display}</p>;
+const Display = ({ amount }) => <p>{amount}</p>;
+Display.propTypes = { amount: PropTypes.number.isRequired };
 export default Display;

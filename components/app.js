@@ -1,6 +1,6 @@
-import React from "react";
-import Button from './button';
-import Display from './display';
+import React from 'react';
+import Button from './Button';
+import Display from './Display';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -13,18 +13,21 @@ export default class App extends React.Component {
   }
 
   increment() {
-    this.setState({ counter: this.state.counter + 1 });
+    const { counter } = this.state;
+    this.setState({ counter: counter + 1 });
   }
 
   decremenet() {
-    this.setState({ counter: this.state.counter - 1 });
+    const { counter } = this.state;
+    this.setState({ counter: counter - 1 });
   }
 
   render() {
+    const { counter } = this.state;
     return (
       <div>
         <Button event={this.increment} title="Add to it" />
-        <Display display={this.state.counter} />
+        <Display display={counter} />
         <Button event={this.decremenet} title="Get from it" />
       </div>
     );

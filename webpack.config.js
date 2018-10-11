@@ -4,11 +4,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
-      }
-    ]
+        loader: 'babel-loader',
+      },
+    ],
   },
   devServer: {
-    contentBase: "./dist"
-  }
+    contentBase: './dist',
+  },
 };
